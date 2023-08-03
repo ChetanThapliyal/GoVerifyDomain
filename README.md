@@ -1,7 +1,6 @@
-# QRnGO
-# GoQRgen - QR Scanner and Generator App
+# QRnGO - QR Scanner and Generator App
 
-GoQRgen is an Android app that allows you to easily generate QR codes and scan existing QR codes using the power of Golang. With a sleek and user-friendly interface, this app provides a seamless experience for generating QR codes for various purposes and scanning QR codes to access information effortlessly.
+QRnGO is an Android app that allows you to easily generate QR codes and scan existing QR codes using the power of Golang. With a sleek and user-friendly interface, this app provides a seamless experience for generating QR codes for various purposes and scanning QR codes to access information effortlessly.
 
 ## Features
 
