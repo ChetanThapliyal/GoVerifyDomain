@@ -1,54 +1,50 @@
-# QRnGO - QR Scanner and Generator App
+# GoVerifyMail - Golang Email Verifier
 
-QRnGO is an Android app that allows you to easily generate QR codes and scan existing QR codes using the power of Golang. With a sleek and user-friendly interface, this app provides a seamless experience for generating QR codes for various purposes and scanning QR codes to access information effortlessly.
+GoMailWatch is a simple email verification tool built using GoLang that allows you to check the validity of email addresses. It performs various checks to ensure the email is correctly formatted, the domain has a valid MX record, and the address exists on the receiving mail server.
 
 ## Features
 
-- **QR Code Generation**: Create QR codes for text, URLs, contact information, Wi-Fi networks, and more with just a few taps.
+- Email format validation: GoMailWatch uses regular expressions to check if the provided email address follows a valid format.
+- MX record validation: The application verifies if the domain of the email address has a valid Mail Exchange (MX) record, indicating the domain can accept emails.
+- SMTP handshake: GoMailWatch performs an SMTP handshake to validate the existence of the email address on the receiving mail server.
 
-- **QR Code Scanning**: Scan QR codes from images or real-time camera feed to quickly access the embedded information.
+## Prerequisites
 
-- **Customization**: Customize the appearance of generated QR codes by choosing colors, styles, and adding logos to make them stand out.
+- Go (Golang) version X.X.X or higher
 
-- **History**: Access your QR code generation and scanning history for easy reference.
+## Installation
 
-## Getting Started
-
-Follow these steps to get the app up and running on your Android device:
-
-1. **Prerequisites**: Ensure that you have Android Studio and the Android SDK installed on your development machine.
-
-2. **Clone the Repository**: Clone this GitHub repository to your local machine.
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/GoQRgen.git
+git clone https://github.com/your-username/gomailwatch.git
 ```
 
-3. **Open the Project**: Launch Android Studio and open the project located in the `GoQRgen` directory.
+2. Navigate to the project directory:
 
-4. **Build the App**: Build the app using Android Studio's build tools.
+```bash
+cd gomailwatch
+```
 
-5. **Run on Device**: Connect your Android device to your computer and run the app on the device. Alternatively, you can use an emulator to test the app.
+3. Build the application:
 
-6. **Explore the App**: Play around with the QR code generation and scanning features to familiarize yourself with the app.
+```bash
+go build
+```
+
+## Usage
+
+Run the executable with the email address you want to verify as an argument:
+
+```bash
+./gomailwatch example@example.com
+```
+
+The application will output whether the email address is valid or not.
 
 ## Contributing
 
-We welcome contributions from the open-source community to make GoQRgen even better. If you'd like to contribute, follow these steps:
-
-1. Fork the Repository.
-
-2. Create a new branch for your feature or bug fix.
-
-3. Make your changes and test thoroughly.
-
-4. Commit your changes with descriptive commit messages.
-
-5. Push your changes to your forked repository.
-
-6. Open a pull request on the main repository and describe your changes in detail.
-
-7. Our team will review your pull request, and if everything looks good, we'll merge it into the main branch.
+Contributions to GoMailWatch are welcome! If you find a bug or have an idea for an improvement, please open an issue or submit a pull request.
 
 ## License
 
@@ -56,13 +52,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-We want to express our gratitude to the open-source community for their continuous support and the amazing Golang and QR code generation libraries that made this project possible.
+Thank you to the Go community for creating and maintaining the amazing ecosystem of libraries and tools that made this project possible.
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, feel free to reach out to us:
+For any inquiries or feedback, you can reach us at contact@gomailwatch.com.
 
-- Email: contact@example.com
-- GitHub: [YourGitHubProfile](https://github.com/your-username)
+```
 
-Thank you for using GoQRgen! We hope you find it useful and enjoyable. Happy QR code generating and scanning!
+Modify the sections (e.g., Features, Prerequisites, Installation, Usage, Contributing, License, Acknowledgments, Contact) and content as needed to provide accurate information about your project. Also, don't forget to include the appropriate licensing information and contact details for your project.
