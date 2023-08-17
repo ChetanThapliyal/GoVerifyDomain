@@ -1,63 +1,52 @@
-# GoVerifyMail - Golang Email Verifier
+# GoVerifyDomain
 
-GoMailWatch is a simple email verification tool built using GoLang that allows you to check the validity of email addresses. It performs various checks to ensure the email is correctly formatted, the domain has a valid MX record, and the address exists on the receiving mail server.
+## Introduction
+
+GoVerifyDomain is a simple domain verification tool written in Go (Golang). This tool allows users to interactively verify various attributes of a domain, including MX records, SPF records, and DMARC records. The project aims to provide a hands-on understanding of DNS queries, email authentication, and security mechanisms.
 
 ## Features
 
-- Email format validation: GoMailWatch uses regular expressions to check if the provided email address follows a valid format.
-- MX record validation: The application verifies if the domain of the email address has a valid Mail Exchange (MX) record, indicating the domain can accept emails.
-- SMTP handshake: GoMailWatch performs an SMTP handshake to validate the existence of the email address on the receiving mail server.
+- Interactive command-line tool for domain verification.
+- Checks the presence of MX, SPF, and DMARC records.
+- Displays the content of SPF and DMARC records if found.
 
-## Prerequisites
-
-- Go (Golang) version X.X.X or higher
-
-## Installation
+## Getting Started
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/your-username/gomailwatch.git
-```
+   ```bash
+   git clone https://github.com/your-username/GoVerifyDomain.git
+   ```
 
 2. Navigate to the project directory:
 
-```bash
-cd gomailwatch
-```
+   ```bash
+   cd GoVerifyDomain
+   ```
 
-3. Build the application:
+3. Build the executable:
 
-```bash
-go build
-```
+   ```bash
+   go build
+   ```
+
+4. Run the program:
+
+   ```bash
+   ./GoVerifyDomain
+   ```
 
 ## Usage
 
-Run the executable with the email address you want to verify as an argument:
-
-```bash
-./gomailwatch example@example.com
-```
-
-The application will output whether the email address is valid or not.
+1. Run the program and follow the prompts to enter a domain name for verification.
+2. The tool will perform checks for MX, SPF, and DMARC records.
+3. The results will be displayed, indicating whether each attribute is present.
+4. If SPF or DMARC records are found, their content will be displayed.
 
 ## Contributing
 
-Contributions to GoMailWatch are welcome! If you find a bug or have an idea for an improvement, please open an issue or submit a pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Thank you to the Go community for creating and maintaining the amazing ecosystem of libraries and tools that made this project possible.
-
-## Contact
-
-For any inquiries or feedback, you can reach us at contact@gomailwatch.com.
-
-```
-
-Modify the sections (e.g., Features, Prerequisites, Installation, Usage, Contributing, License, Acknowledgments, Contact) and content as needed to provide accurate information about your project. Also, don't forget to include the appropriate licensing information and contact details for your project.
